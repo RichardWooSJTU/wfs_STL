@@ -1,9 +1,10 @@
 #include <iostream>
 #include "my_allocator.h"
-#include <vector>
+#include "container/my_vector.h"
+
 
 int main() {
-    std::vector<int,wfs::allocator<int>> vec;
+    wfs::vector<int> vec;
     int prev = 1, cur = 1;
     for (int i = 2; i < 20; ++i) {
         int tmp = cur;

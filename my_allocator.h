@@ -7,7 +7,7 @@
 #include <iostream>
 
 namespace wfs {
-    template<typename T>
+    template<class T>
     class allocator {
     public:
         typedef T value_type;
