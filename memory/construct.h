@@ -42,6 +42,13 @@ namespace wfs {
         //所以这里还是需要traits来判断是不是trivial
         __destroy(first, last, typename iterator_traits<ForwardIterator>::value_type());
     }
+    template<class T>
+    inline void copy(T* old_start, T* old_finish ,T* new_start) {
+        for (; old_start < old_finish; ++old_start) {
+            construct(new_start, *old_start);
+            ++old_start;
+        }
+    }
 }
 
 #endif //MYSTL_CONSTRUCT_H
