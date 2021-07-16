@@ -89,6 +89,10 @@ namespace wfs {
                 insert_aux(finish, x);
             }
         }
+
+        value_type& operator[](size_type n) {
+            return *(start + n);
+        }
     };
 }
 
