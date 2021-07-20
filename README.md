@@ -19,3 +19,10 @@ v0.1
 2021.7.14
 - iterator/deque_iterator.h deque的迭代器
 - container/deque.h deque的简单实现
+
+2021.7.16
+- heap算法的简单实现
+
+2021.7.20
+- avl树实现 tree/avl.h
+- 红黑树实现 tree/rb.h

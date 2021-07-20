@@ -29,6 +29,10 @@ namespace wfs {
             return tmp;
         }
 
+        pointer allocate() {
+            return allocate(1);
+        }
+
         void deallocate(pointer p, size_type n) {
             operator delete(p);
         }
